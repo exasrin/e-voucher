@@ -1,0 +1,67 @@
+# Node.js
+node_modules/
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# npm
+*.log
+npm-debug.log*
+
+# Yarn
+yarn-debug.log*
+yarn-error.log*
+
+# Editor-specific
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+Desktop.ini
+*.lnk
+
+# MongoDB data directory
+/data/db/
+
+# Jest coverage
+coverage/
+
+# Grunt intermediate storage
+.grunt
+
+# Compiled binary addons
+/build/Release
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+
+# macOS
+.DS_Store
+
+# Windows
+Desktop.ini
+Thumbs.db

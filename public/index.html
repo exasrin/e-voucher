@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Voucher List</h2>
+
+  <!-- Form for creating a new voucher -->
+  <form id="voucherForm">
+    <label for="voucherCode">Voucher Code:</label>
+    <input type="text" id="voucherCode" required>
+    <label for="voucherAmount">Amount:</label>
+    <input type="number" id="voucherAmount" required>
+    <button type="button" onclick="createVoucher()">Create Voucher</button>
+  </form>
+
+  <!-- Table to display the list of vouchers -->
+  <table id="voucherTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Amount</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Transaction List</h2>
+
+  <!-- Form for creating a new transaction -->
+  <form id="transactionForm">
+    <label for="transactionVoucher">Voucher ID:</label>
+    <input type="text" id="transactionVoucher" required>
+    <label for="transactionAmount">Amount:</label>
+    <input type="number" id="transactionAmount" required>
+    <button type="button" onclick="createTransaction()">Create Transaction</button>
+  </form>
+
+  <!-- Table to display the list of transactions -->
+  <table id="transactionTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Voucher</th>
+        <th>Amount</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>
